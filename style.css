@@ -1,0 +1,58 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin:0; padding:0;
+  text-align:center;
+  background:#fff8f0;
+}
+
+header {
+  background:#ff7043;
+  color:white;
+  padding:20px;
+  font-size:1.5em;
+}
+
+.container {
+  max-width:600px;
+  margin:30px auto;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+img {
+  max-width:50%;
+  border-radius:10px;
+}
+
+h2 {
+  color:#333;
+  margin:15px 0 5px;
+}
+
+p {
+  color:#555;
+}
+
+.price {
+  font-size:1.3em;
+  color:#ff7043;
+  margin:10px 0;
+}
+
+.btn {
+  display:inline-block;
+  background:#ff7043;
+  color:white;
+  padding:12px 20px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:1.1em;
+  transition:background 0.3s;
+}
+
+.btn:hover {
+  background:#e64a19;
+}
