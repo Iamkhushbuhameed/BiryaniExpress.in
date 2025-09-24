@@ -37,6 +37,18 @@
     </a>
   </section>
 
-  <script src="script.js"></script>
+  <script>
+
+  function orderBiryani(productName, price, qtyId) {
+  const qty = parseInt(document.getElementById(qtyId).value) || 1;
+  const total = price * qty;
+  const phone = "6388015598"; // WhatsApp number
+  const message = `Hello! I want to order ${qty} x ${productName}. Total: ₹${total}. Please confirm.`;
+  const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL, "_blank");
+}
+    
+  </script>
 </body>
 </html>
+
