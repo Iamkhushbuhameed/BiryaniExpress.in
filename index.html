@@ -3,46 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biryani Express</title>
+  <title>Special Biryani - Order Now</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Biryani Express</h1>
-  </header>
 
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <div class="product">
-      <img src="biryani.jpg" alt="Chicken Biryani">
-      <h3>Chicken Biryani</h3>
-      <p>Price: ₹99</p>
-      <input type="number" id="qty1" value="1" min="1">
-      <button onclick="orderBiryani('Chicken Biryani', 300, 'qty1')">Order via WhatsApp</button>
-    </div>
- 
+  <header>🍴 Homemade Special BiryaniExpress.io</header>
 
+  <div class="container">
+    <img src="biryani.jpg" alt="Biryani">
+    <h2>Delicious Homemade Biryani</h2>
+    <p>Freshly cooked with love ❤️. Perfect taste, rich spices, and hygienic preparation.</p>
+    <div class="price">Only ₹99</div>
+    <a class="btn" href="https://wa.me/916388015598?text=Hi,+I+want+to+order+your+Special+Biryani">Order on WhatsApp</a>
+  </div>
+
+  
   <section id="feedback">
     <h2>Feedback</h2>
     <p>Please fill this form:</p>
     <a href="YOUR_GOOGLE_FORM_LINK" target="_blank">
-      <button>Give Feedback</button>
+      <button class="btn">Give Feedback</button>
     </a>
   </section>
 
-  <script>
 
-  function orderBiryani(productName, price, qtyId) {
-  const qty = parseInt(document.getElementById(qtyId).value) || 1;
-  const total = price * qty;
-  const phone = "6388015598"; // WhatsApp number
-  const message = `Hello! I want to order ${qty} x ${productName}. Total: ₹${total}. Please confirm.`;
-  const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-  window.open(whatsappURL, "_blank");
-}
-    
-  </script>
 </body>
 </html>
-
-
